@@ -7,7 +7,8 @@
     <style>
         :root {
             --purple: #6A1B9A;
-            --grey: #616161;
+            --grey: #757575;
+            --light-grey: #f5f5f5;
         }
 
         * {
@@ -17,106 +18,109 @@
             font-family: 'Arial', sans-serif;
         }
 
-        /* Header Section */
+        /* Hero Section */
         .hero {
+            padding: 80px 20px;
             text-align: center;
-            padding: 4rem 2rem;
-            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            background: white;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            color: var(--purple);
+            margin-bottom: 20px;
         }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            color: var(--purple);
-            margin-bottom: 1rem;
+        .delivery-info {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 20px auto;
         }
 
         /* Category Sections */
-        .category-grid {
+        .categories {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 4rem 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px 20px;
+            background: var(--light-grey);
         }
 
         .category-card {
             text-align: center;
-            padding: 2rem;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            transition: transform 0.3s;
+            padding: 30px;
+            background: white;
         }
 
-        .category-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Testimonials Section */
+        /* Testimonials */
         .testimonials {
-            padding: 4rem 2rem;
-            background: #f8f9fa;
+            padding: 60px 20px;
             text-align: center;
         }
 
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
+            gap: 30px;
+            margin-top: 40px;
         }
 
-        /* Features Section */
+        /* Features */
         .features {
-            padding: 4rem 2rem;
-            background: white;
+            padding: 60px 20px;
+            background: var(--light-grey);
         }
 
         .features ul {
             list-style: none;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 30px auto;
+            line-height: 2;
         }
 
         /* Footer */
         footer {
             background: var(--purple);
             color: white;
-            padding: 4rem 2rem;
+            padding: 60px 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
         }
 
         .button {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 12px 35px;
             background: var(--purple);
             color: white;
             text-decoration: none;
             border-radius: 25px;
-            margin-top: 1rem;
-            transition: opacity 0.3s;
-        }
-
-        .button:hover {
-            opacity: 0.9;
+            margin-top: 15px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <!-- Hero Section -->
-    <section class="https://raw.githubusercontent.com/DdreamsStudio/Canvadesigns/refs/heads/main/IMG-20250526-WA0003.jpg">
-        <!-- Upload logo here -->
-        <!-- <img src="your-logo.png" alt="Mintmade Logo"> -->
+    <section class="hero">
+        <!-- Upload main banner image here -->
+        <!-- <img src="hero-image.png" alt="Fashion Collage" style="width: 100%; max-width: 1200px; margin-bottom: 40px;"> -->
+        
         <h1>Mintmade Fashion</h1>
-        <p>An extension of your closet</p>
-        <p>Same-day or next-day delivery within our service areas</p>
+        <div class="delivery-info">
+            <p>An extension of your closet</p>
+            <p>Same-day or next-day delivery within our service areas</p>
+        </div>
+        <p>Shop for whatever you feel like wearing and get it within 24 hours!</p>
     </section>
 
-    <!-- Women's Category -->
-    <section class="https://raw.githubusercontent.com/DdreamsStudio/Canvadesigns/refs/heads/main/IMG-20250526-WA0003.jpg">
-        <div class="https://raw.githubusercontent.com/DdreamsStudio/Canvadesigns/refs/heads/main/IMG-20250526-WA0003.jpg">
-            <!-- Upload women's category image -->
-            <!-- <img src="women-category.jpg" alt="Women's Fashion"> -->
+    <!-- Categories Grid -->
+    <section class="categories">
+        <!-- Women's Category -->
+        <div class="category-card">
+            <!-- Upload women's fashion image -->
+            <!-- <img src="womens-fashion.jpg" alt="Women's Fashion" style="width: 100%; height: 300px; object-fit: cover;"> -->
             <h2>Clothes for Her</h2>
             <p>Shop for classic pieces you can wear every day</p>
             <a href="#" class="button">SHOP NOW</a>
@@ -124,35 +128,51 @@
 
         <!-- Men's Category -->
         <div class="category-card">
-            <!-- Upload men's category image -->
-            <!-- <img src="men-category.jpg" alt="Men's Fashion"> -->
+            <!-- Upload men's fashion image -->
+            <!-- <img src="mens-fashion.jpg" alt="Men's Fashion" style="width: 100%; height: 300px; object-fit: cover;"> -->
             <h2>Clothes for Him</h2>
             <p>Look dashing while on the go with our casual wear items</p>
             <a href="#" class="button">SHOP NOW</a>
         </div>
 
-        <!-- Accessories Category -->
+        <!-- Accessories -->
         <div class="category-card">
             <!-- Upload accessories image -->
-            <!-- <img src="accessories.jpg" alt="Accessories"> -->
+            <!-- <img src="accessories.jpg" alt="Accessories" style="width: 100%; height: 300px; object-fit: cover;"> -->
             <h2>Accessories</h2>
-            <p>Add shoes, bags, and more to complement</p>
+            <p>Add shoes, bags and more to complement</p>
             <a href="#" class="button">SHOP NOW</a>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials -->
     <section class="testimonials">
         <h2>Look who's wearing Mintmade!</h2>
         <div class="testimonial-grid">
-            <!-- Upload testimonial photos -->
-            <!-- <img src="jordanna.jpg" alt="Jordanna Philips"> -->
-            <!-- <img src="neil.jpg" alt="Neil Tran"> -->
-            <!-- <img src="agatha.jpg" alt="Agatha Lam"> -->
+            <!-- Testimonial 1 -->
+            <div>
+                <!-- Upload Jordanna's image -->
+                <!-- <img src="jordanna.jpg" alt="Jordanna" style="width: 100%; height: 400px; object-fit: cover;"> -->
+                <p>Jordanna Philips<br>(Jordanna's Closet)</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div>
+                <!-- Upload Neil's image -->
+                <!-- <img src="neil.jpg" alt="Neil" style="width: 100%; height: 400px; object-fit: cover;"> -->
+                <p>Neil Tran<br>(Actor and Model)</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div>
+                <!-- Upload Agatha's image -->
+                <!-- <img src="agatha.jpg" alt="Agatha" style="width: 100%; height: 400px; object-fit: cover;"> -->
+                <p>Agatha Lam<br>(Host and Influencer)</p>
+            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features -->
     <section class="features">
         <h2>Why people love to shop at Mintmade Fashion</h2>
         <ul>
@@ -171,7 +191,6 @@
         </div>
         <div>
             <h3>Follow Us</h3>
-            <!-- Social media icons would go here -->
             <p>Instagram<br>Facebook<br>Twitter</p>
         </div>
         <div>
