@@ -5,197 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mintmade Fashion</title>
     <style>
-        :root {
-            --purple: #6A1B9A;
-            --grey: #757575;
-            --light-grey: #f5f5f5;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
-
-        /* Hero Section */
-        .hero {
-            padding: 80px 20px;
-            text-align: center;
-            background: white;
+        
+        body {
+            color: #333;
+            background-color: white;
         }
         
-        .hero h1 {
-            font-size: 2.8rem;
-            color: var(--purple);
-            margin-bottom: 20px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        .delivery-info {
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        
+        .hero-text {
+            font-size: 24px;
+            text-align: center;
+            line-height: 1.4;
+            margin: 20px 0;
+        }
+        
+        .hero-text span {
+            color: #6a0dad;
+            font-weight: bold;
+        }
+        
+        .subheading {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .categories {
             display: flex;
             justify-content: space-between;
-            max-width: 800px;
-            margin: 20px auto;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
         }
-
-        /* Category Sections */
-        .categories {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            padding: 50px 20px;
-            background: var(--light-grey);
-        }
-
-        .category-card {
+        
+        .category {
+            width: 30%;
             text-align: center;
-            padding: 30px;
-            background: white;
+            margin-bottom: 30px;
         }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 60px 20px;
-            text-align: center;
+        
+        .category h2 {
+            color: #6a0dad;
+            margin-bottom: 15px;
+            font-size: 22px;
         }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 40px;
+        
+        .category p {
+            margin-bottom: 20px;
+            line-height: 1.4;
         }
-
-        /* Features */
-        .features {
-            padding: 60px 20px;
-            background: var(--light-grey);
-        }
-
-        .features ul {
-            list-style: none;
-            max-width: 600px;
-            margin: 30px auto;
-            line-height: 2;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--purple);
-            color: white;
-            padding: 60px 20px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .button {
+        
+        .btn {
             display: inline-block;
-            padding: 12px 35px;
-            background: var(--purple);
+            background-color: #6a0dad;
             color: white;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 25px;
-            margin-top: 15px;
+            border-radius: 4px;
             font-weight: bold;
+        }
+        
+        .testimonials {
+            margin-bottom: 60px;
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #6a0dad;
+        }
+        
+        .testimonial-grid {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .testimonial {
+            width: 30%;
+            text-align: center;
+        }
+        
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            background-color: #ddd;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        .benefits {
+            margin-bottom: 60px;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #6a0dad;
+        }
+        
+        .benefits-list {
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .benefits-list li:before {
+            content: "¢";
+            position: absolute;
+            left: 0;
+            color: #6a0dad;
+        }
+        
+        footer {
+            background-color: #f5f5f5;
+            padding: 40px 0;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .social-links, .contact-info, .address {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        
+        .social-links h3, .contact-info h3, .address h3 {
+            color: #6a0dad;
+            margin-bottom: 15px;
+        }
+        
+        .social-links a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="https://github.com/DdreamsStudio/Canvadesigns/raw/refs/heads/main/IMG-20250526-WA0003.jpg">
-        <!-- Upload main banner image here -->
-        <!-- <img src="hero-image.png" alt="Fashion Collage" style="width: 100%; max-width: 1200px; margin-bottom: 40px;"> -->
+    <div class="https://github.com/DdreamsStudio/Canvadesigns/raw/refs/heads/main/IMG-20250526-WA0003.jpg">
+        <header>
+            <h1>Mintmade Fashion</h1>
+        </header>
         
-        <h1>Mintmade Fashion</h1>
-        <div class="delivery-info">
-            <p>An extension of your closet</p>
-            <p>Same-day or next-day delivery within our service areas</p>
-        </div>
-        <p>Shop for whatever you feel like wearing and get it within 24 hours!</p>
-    </section>
-
-    <!-- Categories Grid -->
-    <section class="categories">
-        <!-- Women's Category -->
-        <div class="category-card">
-            <!-- Upload women's fashion image -->
-            <!-- <img src="womens-fashion.jpg" alt="Women's Fashion" style="width: 100%; height: 300px; object-fit: cover;"> -->
-            <h2>Clothes for Her</h2>
-            <p>Shop for classic pieces you can wear every day</p>
-            <a href="#" class="button">SHOP NOW</a>
-        </div>
-
-        <!-- Men's Category -->
-        <div class="category-card">
-            <!-- Upload men's fashion image -->
-            <!-- <img src="mens-fashion.jpg" alt="Men's Fashion" style="width: 100%; height: 300px; object-fit: cover;"> -->
-            <h2>Clothes for Him</h2>
-            <p>Look dashing while on the go with our casual wear items</p>
-            <a href="#" class="button">SHOP NOW</a>
-        </div>
-
-        <!-- Accessories -->
-        <div class="category-card">
-            <!-- Upload accessories image -->
-            <!-- <img src="accessories.jpg" alt="Accessories" style="width: 100%; height: 300px; object-fit: cover;"> -->
-            <h2>Accessories</h2>
-            <p>Add shoes, bags and more to complement</p>
-            <a href="#" class="button">SHOP NOW</a>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>Look who's wearing Mintmade!</h2>
-        <div class="testimonial-grid">
-            <!-- Testimonial 1 -->
-            <div>
-                <!-- Upload Jordanna's image -->
-                <!-- <img src="jordanna.jpg" alt="Jordanna" style="width: 100%; height: 400px; object-fit: cover;"> -->
-                <p>Jordanna Philips<br>(Jordanna's Closet)</p>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div>
-                <!-- Upload Neil's image -->
-                <!-- <img src="neil.jpg" alt="Neil" style="width: 100%; height: 400px; object-fit: cover;"> -->
-                <p>Neil Tran<br>(Actor and Model)</p>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div>
-                <!-- Upload Agatha's image -->
-                <!-- <img src="agatha.jpg" alt="Agatha" style="width: 100%; height: 400px; object-fit: cover;"> -->
-                <p>Agatha Lam<br>(Host and Influencer)</p>
+        <div class="https://github.com/DdreamsStudio/Canvadesigns/raw/refs/heads/main/IMG-20250526-WA0003.jpg">
+            <div class="hero-text">
+                An <span>extension</span> of your closet<br>
+                <span>same-day or next-day</span> delivery within our<br>
+                service areas.
             </div>
         </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <h2>Why people love to shop at Mintmade Fashion</h2>
-        <ul>
-            <li>✓ Order before 2 pm and get your purchase within the day</li>
-            <li>✓ Not your size? Avail of our hassle-free return policy</li>
-            <li>✓ 24/7 customer support</li>
-            <li>✓ Contactless payment and cash on delivery</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
+        
+        <p class="subheading">Shop for whatever you feel like wearing<br>and get it within 24 hours!</p>
+        
+        <div class="categories">
+            <div class="category">
+                <h2>Clothes for Her</h2>
+                <p>Shop for classic or trendy pieces you can wear every day.</p>
+                <a href="#" class="btn">SHOP NOW</a>
+            </div>
+            
+            <div class="category">
+                <h2>Clothes for Him</h2>
+                <p>Look dashing while on the go with our casual wear items.</p>
+                <a href="#" class="btn">SHOP NOW</a>
+            </div>
+            
+            <div class="category">
+                <h2>Accessories</h2>
+                <p>Add shoes, bags and more to complement your look.</p>
+                <a href="#" class="btn">SHOP NOW</a>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2>Look who's wearing Mintmade!</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="#" alt="Jordanna Philips">
+                    <h3>Jordanna Philips</h3>
+                    <p>(Jordanna's Closet)</p>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="#" alt="Neil Tran">
+                    <h3>Neil Tran</h3>
+                    <p>(Actor and Model)</p>
+                </div>
+                
+                <div class="testimonial">
+                    <img src="#" alt="Agatha Lam">
+                    <h3>Agatha Lam</h3>
+                    <p>(Host and Influencer)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="benefits">
+            <h2>Why people love to shop at Mintmade Fashion</h2>
+            
+            <ul class="benefits-list">
+                <li>Order before 2 pm and get your purchase within the day.</li>
+                <li>Not your size? Avail of our hassle-free return policy.</li>
+                <li>24/7 customer support.</li>
+                <li>contactless payment and cash on delivery.</li>
+            </ul>
+        </div>
+    </div>
+    
     <footer>
-        <div>
-            <h3>Contact</h3>
-            <p>(123) 456 7890<br>hello@reallygreatsite.com</p>
-        </div>
-        <div>
-            <h3>Follow Us</h3>
-            <p>Instagram<br>Facebook<br>Twitter</p>
-        </div>
-        <div>
-            <h3>Address</h3>
-            <p>123 Anywhere St., Any City<br>State, Country 12345</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <p>(123) 456 7890</p>
+                    <p>hello@reallygreatsite.com</p>
+                </div>
+                
+                <div class="address">
+                    <h3>Visit Us</h3>
+                    <p>123 Anywhere St., Any City<br>
+                    State, Country 12345</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Mintmade Fashion. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
